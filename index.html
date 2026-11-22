@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseApp — Pricing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== HERO / HEADER ===== -->
+    <header class="site-header">
+      <div class="logo">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect width="28" height="28" rx="8" fill="#6366f1"/>
+          <path d="M6 14h4l3-7 4 14 3-7h2" stroke="#fff" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>PulseApp</span>
+      </div>
+      <nav aria-label="Site navigation">
+        <a href="#">Features</a>
+        <a href="#">Docs</a>
+        <a href="#pricing" class="nav-cta">Pricing</a>
+      </nav>
+    </header>
+
+    <!-- ===== PRICING SECTION ===== -->
+    <main>
+      <section id="pricing" class="pricing-section" aria-labelledby="pricing-heading">
+
+        <!-- Section headline -->
+        <div class="section-intro">
+          <p class="eyebrow">Simple, transparent pricing</p>
+          <h1 id="pricing-heading">Pick the plan that fits your team</h1>
+          <p class="section-sub">No hidden fees. Cancel any time. Upgrade or downgrade whenever you need.</p>
+        </div>
+
+        <!-- ===== BILLING TOGGLE ===== -->
+        <div class="toggle-wrapper" role="group" aria-label="Billing period">
+          <button id="btn-monthly" class="toggle-btn active" aria-pressed="true">
+            Monthly
+          </button>
+          <button id="btn-yearly" class="toggle-btn" aria-pressed="false">
+            Yearly
+            <span class="save-badge" aria-label="Save 20 percent">Save 20%</span>
+          </button>
+        </div>
+
+        <!-- ===== CARDS GRID ===== -->
+        <div class="cards-grid">
+
+          <!-- STARTER CARD -->
+          <article class="card" aria-label="Starter plan">
+            <div class="card-top">
+              <div class="plan-icon starter-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h2 class="plan-name">Starter</h2>
+              <p class="plan-desc">Perfect for solo makers and side&nbsp;projects.</p>
+            </div>
+
+            <div class="card-price">
+              <span class="currency">$</span>
+              <span class="price" data-monthly="19" data-yearly="182">19</span>
+              <div class="price-period">
+                <span class="unit">per month</span>
+                <span class="billed-note yearly-note" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <ul class="feature-list" aria-label="Starter plan features">
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Up to <strong>3 projects</strong>
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <strong>5 GB</strong> storage
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Basic analytics dashboard
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Email support
+              </li>
+              <li class="feature-muted">
+                <svg class="cross" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+                Priority support
+              </li>
+            </ul>
+
+            <a href="#" class="cta-btn cta-outline" role="button">Get Started Free</a>
+          </article>
+
+          <!-- PRO CARD (Popular) -->
+          <article class="card card--popular" aria-label="Pro plan, most popular">
+            <div class="ribbon" aria-label="Most popular plan">⭐ Popular</div>
+
+            <div class="card-top">
+              <div class="plan-icon pro-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h2 class="plan-name">Pro</h2>
+              <p class="plan-desc">For growing teams that need more power and flexibility.</p>
+            </div>
+
+            <div class="card-price">
+              <span class="currency">$</span>
+              <span class="price" data-monthly="49" data-yearly="470">49</span>
+              <div class="price-period">
+                <span class="unit">per month</span>
+                <span class="billed-note yearly-note" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <ul class="feature-list" aria-label="Pro plan features">
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Up to <strong>25 projects</strong>
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <strong>50 GB</strong> storage
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Advanced analytics &amp; reports
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Priority email &amp; chat support
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Custom integrations
+              </li>
+            </ul>
+
+            <a href="#" class="cta-btn cta-primary" role="button">Start 14-day Trial</a>
+          </article>
+
+          <!-- TEAM CARD (Best Value) -->
+          <article class="card" aria-label="Team plan">
+            <div class="ribbon ribbon--gold" aria-label="Best value plan">💎 Best Value</div>
+
+            <div class="card-top">
+              <div class="plan-icon team-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h2 class="plan-name">Team</h2>
+              <p class="plan-desc">Unlimited scale for large organisations and enterprises.</p>
+            </div>
+
+            <div class="card-price">
+              <span class="currency">$</span>
+              <span class="price" data-monthly="99" data-yearly="950">99</span>
+              <div class="price-period">
+                <span class="unit">per month</span>
+                <span class="billed-note yearly-note" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <ul class="feature-list" aria-label="Team plan features">
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <strong>Unlimited</strong> projects
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <strong>500 GB</strong> storage
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Enterprise analytics suite
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                24/7 dedicated support &amp; SLA
+              </li>
+              <li>
+                <svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                SSO, audit logs &amp; admin controls
+              </li>
+            </ul>
+
+            <a href="#" class="cta-btn cta-outline" role="button">Contact Sales</a>
+          </article>
+
+        </div><!-- /.cards-grid -->
+
+        <!-- Trust strip -->
+        <p class="trust-note" aria-label="Trust indicators">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                  stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          No credit card required &nbsp;·&nbsp; Cancel anytime &nbsp;·&nbsp; Secure checkout
+        </p>
+
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <p>© 2026 PulseApp Inc. &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
